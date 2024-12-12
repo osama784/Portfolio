@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scrollbar-width: thin;
+            scrollbar-color: #eeeeee;
+        }
+    </style>
+</head>
+
+<body class="bg-[#eeeeee]">
+    <div id="app" class="relative">
+        <nav class="fixed top-0 border-b border-[#8080803c] h-[72px] w-full z-10 backdrop-blur-md bg-[#eeeeee70]">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 container">
+                <a id="navbar-logo" href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="images/icon.png" class="h-8" alt="Osama Logo"
+                        class="hover:rotate-45 transition-all hover:shadow-[4px_4px_0_0_#5271ff] hover:-translate-x-1 hover:-translate-y-1" />
+                    <div class="space-x-1">
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap ">Osama</span>
+                    </div>
+                </a>
+
+                <button id="menu" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto">
+                    <ul id="navbar-items-list"
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+                        <li class="">
+                            <a href="#home"
+                                class="flex gap-3 py-2 px-3 text-gray-900 rounded hover:text-main-purple transition-colors text-sm">
+                                <span class="text-main-purple">01.</span>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="#about"
+                                class="flex gap-3 py-2 px-3 text-gray-900 rounded hover:text-main-purple transition-colors text-sm">
+                                <span class="text-main-purple">02.</span>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="#projects"
+                                class="flex gap-3 py-2 px-3 text-gray-900 rounded hover:text-main-purple transition-colors text-sm">
+                                <span class="text-main-purple">03.</span>
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="#contact"
+                                class="flex gap-3 py-2 px-3 text-gray-900 rounded hover:text-main-purple transition-colors text-sm">
+                                <span class="text-main-purple">04.</span>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section id="home" class="snap-center relative flex justify-center items-center w-full py-48">
+                <div class="fixed inset-x-0 -z-10 -top-40 transform-gpu overflow-hidden blur-3xl sm:-top-80 animate-move-sm sm:animate-move"
+                    aria-hidden="true">
+                    <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);">
+                    </div>
+                </div>
+                <div class="text-center px-[2.5%] py-[5%] flex justify-center">
+                    <div class="mt-auto mb-auto flex flex-col justify-center items-center">
+                        <div id="section-intro" class="flex items-center gap-3 mb-3 ">
+                            <small class="bg-main-purple text-white px-3 py-1">Hi, My name is</small>
+                        </div>
+                        <div class="mb-7 space-y-5">
+                            <div id="section-heading" class="space-y-1">
+                                <h1 id="name" class="text-[clamp(30px,5vw,50px)] font-bold text-black/90">Osama Doage.
+                                </h1>
+                                <h1 id="description" class="text-[clamp(30px,5vw,50px)] text-black/60">I build things
+                                    for the web.</h1>
+                            </div>
+                            <div id="section-contact" class="w-full flex gap-3 justify-center flex-wrap">
+                                <a href="https://www.linkedin.com/in/osama-doage-794601303" target="_blank"
+                                    rel="noreferrer noopener"
+                                    class="hover:opacity-80 border border-black rounded-full w-[52px]">
+                                    <div
+                                        class="flex items-center justify-center bg-transparent size-12 rounded-full border border-black border-[#000000D9] group group">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                            width="20px" fill="#000000D9" color="#000000D9"
+                                            class="group-hover:fill-blue-600 transition-colors">
+                                            <path
+                                                d="M23.342 23.378h-4.76v-7.47c0-1.78-.036-4.073-2.48-4.073-2.482 0-2.86 1.938-2.86 3.942v7.601h-4.76V8.018h4.572v2.093h.061c.639-1.207 2.192-2.481 4.513-2.481 4.823 0 5.715 3.179 5.715 7.317l-.001 8.431zM3.106 5.916a2.764 2.764 0 01-2.763-2.77 2.763 2.763 0 115.527 0 2.77 2.77 0 01-2.764 2.77zm2.386 17.462H.72V8.018h4.773v15.36z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/osama784" target="_blank" rel="noreferrer noopener"
+                                    class="hover:opacity-80 border border-black rounded-full w-[52px]">
+                                    <div
+                                        class="flex items-center justify-center bg-transparent size-12 rounded-full border border-black border-[#000000D9] group">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                            width="20px" fill="#000000D9" color="#000000D9">
+                                            <title>GitHub</title>
+                                            <path
+                                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/asamadoage" target="_blank" rel="noreferrer noopener"
+                                    class="hover:opacity-80 border border-black rounded-full w-[52px]">
+                                    <div
+                                        class="flex items-center justify-center bg-transparent size-12 rounded-full border border-black border-[#000000D9] group">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                            width="20px" fill="#000000D9" color="#000000D9"
+                                            class="group-hover:fill-blue-800 transition-colors">
+                                            <title>Facebook</title>
+                                            <path
+                                                d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="https://codeforces.com/profile/osamadoage0" target="_blank"
+                                    rel="noreferrer noopener"
+                                    class="hover:opacity-80 border border-black rounded-full w-[52px]">
+                                    <div
+                                        class="flex items-center justify-center bg-transparent size-12 rounded-full border border-black border-[#000000D9] group">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                            width="20px" fill="#000000D9" color="#000000D9"
+                                            class="group-hover:fill-red-800 transition-colors">
+                                            <title>Codeforces</title>
+                                            <path
+                                                d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5h-3C.673 21 0 20.328 0 19.5V9c0-.828.673-1.5 1.5-1.5h3zm9-4.5c.828 0 1.5.672 1.5 1.5v15c0 .828-.672 1.5-1.5 1.5h-3c-.827 0-1.5-.672-1.5-1.5v-15c0-.828.673-1.5 1.5-1.5h3zm9 7.5c.828 0 1.5.672 1.5 1.5v7.5c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5V12c0-.828.672-1.5 1.5-1.5h3z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="mailto:osamadoage0@gmail.com" target="_blank" rel="noreferrer noopener"
+                                    class="hover:opacity-80 border border-black rounded-full w-[52px]">
+                                    <div
+                                        class="flex items-center justify-center bg-transparent size-12 rounded-full border border-black border-[#000000D9] group">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                            width="20px" fill="#000000D9" color="#000000D9"
+                                            class="group-hover:fill-red-600 transition-colors">
+                                            <title>Gmail</title>
+                                            <path
+                                                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div id="section-content" class="text-black/70 text-xl max-w-[50vw] mb-5">
+                            <p>Building Full-Stack apps, Gaining Experience and Working under Pressure is my Core
+                                Competition
+                            </p>
+                        </div>
+                        <div id="section-footer" class="flex justify-center">
+                            <a href="mailto:osamadoage0@gmail.com"
+                                class="flex gap-3 text-main-purple font-bold py-2 px-4 rounded text-xl transition-all hover:shadow-[4px_4px_0_0_#5271ff] hover:-translate-x-1 hover:-translate-y-1 border border-main-purple">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="#5271ff"
+                                        class="h-6">
+                                        <path
+                                            d="M25.983 13.342c.005-.114.017-.226.017-.342a8 8 0 00-8-8c-3.11 0-5.8 1.779-7.123 4.371A4.989 4.989 0 009 9c-2.53 0-4.599 1.885-4.932 4.324A5.997 5.997 0 006 25h18a5.998 5.998 0 001.983-11.658zm-7.276 5.365l-3 3a.997.997 0 01-1.414 0l-3-3a.999.999 0 111.414-1.414L14 18.586V13a1 1 0 112 0v5.586l1.293-1.293a.999.999 0 111.414 1.414z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>CV</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about"
+                class="snap-center relative flex justify-center items-center w-full min-h-screen overflow-auto">
+                <div id="about-inner"
+                    class="flex flex-col gap-5 my-auto mx-auto sm:text-lg px-12 md:px-0 md:max-w-[50vw] transition-all">
+                    <div id="section-heading" class="flex gap-3 items-center font-semibold">
+                        <h1 class="text-[clamp(24px,5vw,32px)]"><span class="text-main-purple text-lg">02.</span> About
+                            Me</h1>
+                        <hr class="border hidden sm:block border-main-purple flex-1 max-w-36 mt-1">
+                    </div>
+                    <div id="main-content">
+                        <p>Hello, My name is Osama and I enjoy developing web applications. I'm Studying <span
+                                class="text-main-purple">Computer Science</span>,
+                            Second Year in Damascus University (HMK).
+                            My interest in Web started back in
+                            2022 when I decided to learn basic Front-end skills.
+                        </p>
+                        <br>
+                        <p>Fast forward to today, I become a Full-Stack developer and built big projects, with Problem
+                            Solving skills and <span class="text-main-purple">over 100 problems solved on
+                                Codeforces.</span>
+                        </p>
+                        <br>
+
+                    </div>
+                    <div id="skills" class="flex flex-col gap-4">
+                        <p class="text-black/60">Here are a few technologies I'v been working with recently:</p>
+                        <div class="">
+                            <ul
+                                class="grid sm:grid-cols-[repeat(2,minmax(140px,220px))] gap-2 overflow-hidden text-base">
+                                <li
+                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                    Django Web Framework</li>
+                                <li
+                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                    Django Rest Framework</li>
+                                <li
+                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                    Authentication</li>
+                                <li
+                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                    Unit Testing</li>
+                                <li
+                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                    PostgreSQL</li>
+                                <li
+                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                    HTML, CSS</li>
+                                <li
+                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                    TypeScript</li>
+                                <li
+                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                    TailwindCSS</li>
+                                <li
+                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                    DSA</li>
+                                <li
+                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                    JAVA (Advanced)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="snap-center py-20 md:py-24 w-full flex items-center overflow-auto relative">
+                <div
+                    class="mx-auto my-auto container flex flex-col justify-center items-center lg:max-w-[1000px] gap-10 p-4 sm:p-12">
+                    <div id="section-heading"
+                        class="flex gap-3 items-center self-center justify-start w-full font-semibold">
+                        <h1 class="text-[clamp(24px,5vw,32px)]"><span class="text-main-purple text-xl">03.</span> Some
+                            Things
+                            I'v Built</h1>
+                        <hr class="border hidden sm:block border-main-purple flex-1 max-w-36 mt-1">
+                    </div>
+                    <ul class='flex flex-col gap-44'>
+                        <li id="project" class="grid grid-cols-12 gap-3 items-center justify-center group/project-li">
+                            <div id="project-content"
+                                class="col-span-full group-even/project-li:md:col-[1/9] group-even/project-li:lg:col-[1/7] group-odd/project-li:md:col-[5/-1] group-odd/project-li:lg:col-[7/-1] row-[1/-1] rounded bg-main-black md:bg-transparent group-odd/project-li:md:text-right pt-10 pb-7 px-10 md:p-0  md:z-auto">
+                                <div class="flex flex-col">
+                                    <p class="text-main-purple font-normal font-mono">
+                                        Featured Project</p>
+                                    <h3
+                                        class="mb-5 md:text-inherit text-white font-semibold text-[clamp(24px,5vw,28px)] z-[2] relative w-fit group-odd/project-li:md:self-end">
+                                        <a href="" class="hover:text-main-purple transition-colors">Nest
+                                            Mart</a>
+                                    </h3>
+                                    <div id="project-description "
+                                        class="relative sm:text-lg md:p-6 rounded text-base md:bg-main-black text-white md:shadow-md z-[2]">
+                                        <p>eCommerce website specific to food products, each product has
+                                            category, color, vendor, etc.
+
+                                            <br><br>
+                                            Authentication and Authorization handled by Sessions, with aid
+                                            of APIs for some opertaions like adding to the cart and the
+                                            wishlist, reviewing the products and the vendors
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <ul id="project-tech-list"
+                                        class="flex flex-wrap text-sm sm:text-base relative z-[2] group-odd/project-li:md:justify-end gap-x-5 gap-y-2 *:bg-white *:p-2 *:rounded-lg *:border">
+                                        <li>Django</li>
+                                        <li>DRF</li>
+                                        <li>TailwindCSS</li>
+                                        <li>AlpineJs</li>
+                                        <li>JavaScript (fetching)</li>
+
+                                    </ul>
+                                    <div id="project-links"
+                                        class="flex gap-4 self-end group-even/project-li:md:self-start mt-4 z-[2] relative w-fit">
+                                        <a href="https://github.com/osama784/Ecommerce" aria-label="GitHub Link"
+                                            rel="noopener noreferrer" target="_blank"
+                                            class="flex justify-center items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="size-5 stroke-light-gray md:stroke-black/60 hover:stroke-main-purple transition-all">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://osamadoage2.pythonanywhere.com" aria-label="External Link"
+                                            class="flex justify-center items-center" rel="noopener noreferrer"
+                                            target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="size-5 stroke-light-gray md:stroke-black/60 hover:stroke-main-purple transition-all">
+                                                <title>External Link</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                </path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="project-image"
+                                class="realtive md:py-3 col-span-full row-span-full group-odd/project-li:md:col-[1/8] group-even/project-li:md:col-[6/-1] opacity-10 h-full md:opacity-100">
+                                <a href=""
+                                    class="rounded block size-full bg-[#bdc7f4] align-middle shadow-md hover:shadow-[0_20px_30px_-15px_rgba(2,12,27,0.7)] duration-300 transition-all  before:transition-custom group/image-container hover:before:bg-transparent before:inset-0 before:absolute before:z-[3] relative before:mix-blend-screen before:rounded">
+
+                                    <div class="max-w-full size-full border border-slate-400/60 rounded">
+                                        <img src="images/nest.png" alt=""
+                                            class="rounded size-full object-cover max-h-[520px] transition-custom">
+
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li id="project" class="grid grid-cols-12 gap-3 items-center justify-center group/project-li">
+                            <div id="project-content"
+                                class="col-span-full group-even/project-li:md:col-[1/9] group-even/project-li:lg:col-[1/7] group-odd/project-li:md:col-[5/-1] group-odd/project-li:lg:col-[7/-1] row-[1/-1] rounded bg-main-black md:bg-transparent group-odd/project-li:md:text-right pt-10 pb-7 px-10 md:p-0 md:z-auto">
+                                <div class="flex flex-col">
+                                    <p class="text-main-purple font-normal font-mono">
+                                        Featured Project</p>
+                                    <h3
+                                        class="mb-5 md:text-inherit text-white font-semibold text-[clamp(24px,5vw,28px)] z-[2] relative w-fit group-odd/project-li:md:self-end">
+                                        <a href="" class="hover:text-main-purple transition-colors">PromptSphere</a>
+                                    </h3>
+                                    <div id="project-description"
+                                        class="relative md:p-6 rounded sm:text-lg md:bg-main-black text-white md:shadow-md z-[2]">
+                                        <p>User authentication, exploring othre users' prompts, create and
+                                            share your own prompts with the community, edit or delete your
+                                            shared prompts with ease
+                                            <br><br>
+                                            with help of my friend who builds the Front-end
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <ul id="project-tech-list"
+                                        class="flex flex-wrap text-sm sm:text-base relative z-[2] group-odd/project-li:md:justify-end gap-x-5 gap-y-2 *:bg-white *:p-2 *:rounded-lg *:border">
+                                        <li>Django</li>
+                                        <li>DRF</li>
+                                    </ul>
+                                    <div id="project-links"
+                                        class="flex gap-4 self-end group-even/project-li:md:self-start mt-4 z-[2] relative w-fit">
+                                        <a href="https://github.com/osama784/Prompts" aria-label="GitHub Link"
+                                            rel="noopener noreferrer" target="_blank"
+                                            class="flex justify-center items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="size-5 stroke-light-gray md:stroke-black/60 hover:stroke-main-purple transition-all">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://prompt-sphere-tawny.vercel.app" aria-label="External Link"
+                                            class="flex justify-center items-center" rel="noopener noreferrer"
+                                            target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="size-5 stroke-light-gray md:stroke-black/60 hover:stroke-main-purple transition-all">
+                                                <title>External Link</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                </path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="project-image"
+                                class="realtive md:py-3 col-span-full row-span-full group-odd/project-li:md:col-[1/8] group-even/project-li:md:col-[6/-1] opacity-10 h-full md:opacity-100">
+                                <a href=""
+                                    class="rounded block size-full bg-[#bdc7f4] align-middle shadow-md hover:shadow-[0_20px_30px_-15px_rgba(2,12,27,0.7)] duration-300 transition-all  before:transition-custom group/image-container hover:before:bg-transparent before:inset-0 before:absolute before:z-[3] relative before:mix-blend-screen before:rounded">
+                                    <div class="max-w-full size-full border border-slate-400/60 rounded">
+                                        <img src="images/prompts.png" alt=""
+                                            class="rounded size-full object-cover max-h-[520px] transition-custom">
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li id="project" class="grid grid-cols-12 gap-3 items-center justify-center group/project-li">
+                            <div id="project-content"
+                                class="col-span-full group-even/project-li:md:col-[1/9] group-even/project-li:lg:col-[1/7] group-odd/project-li:md:col-[5/-1] group-odd/project-li:lg:col-[7/-1] row-[1/-1] rounded bg-main-black md:bg-transparent group-odd/project-li:md:text-right pt-10 pb-7 px-10 md:p-0 md:z-auto">
+                                <div class="flex flex-col">
+                                    <p class="text-main-purple font-normal font-mono">
+                                        Featured Project</p>
+                                    <h3
+                                        class="mb-5 md:text-inherit text-white font-semibold text-[clamp(24px,5vw,28px)] z-[2] relative w-fit group-odd/project-li:md:self-end">
+                                        <a href="" class="hover:text-main-purple transition-colors">To Do</a>
+                                    </h3>
+                                    <div id="project-description"
+                                        class="relative md:p-6 rounded sm:text-lg md:bg-main-black text-white md:shadow-md z-[2]">
+                                        <p>To Do app allows users to create tasks and categories (CRUD
+                                            operations) with handling of Authentication and Authorization
+                                            using tokens</p>
+                                    </div>
+                                    <br>
+                                    <ul id="project-tech-list"
+                                        class="flex flex-wrap text-sm sm:text-base relative z-[2] group-odd/project-li:md:justify-end gap-x-5 gap-y-2 *:bg-white *:p-2 *:rounded-lg *:border">
+                                        <li>Django</li>
+                                        <li>DRF</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                    <div id="project-links"
+                                        class="flex gap-4 self-end group-even/project-li:md:self-start mt-4 z-[2] relative w-fit">
+                                        <a href="https://github.com/osama784/Frontend_TO_DO" aria-label="GitHub Link"
+                                            rel="noopener noreferrer" target="_blank"
+                                            class="flex justify-center items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="size-5 stroke-light-gray md:stroke-black/60 hover:stroke-main-purple transition-all">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg></a>
+                                        <a href="https://to-do-six-coral.vercel.app" aria-label="External Link"
+                                            class="flex justify-center items-center" rel="noopener noreferrer"
+                                            target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="size-5 stroke-light-gray md:stroke-black/60 hover:stroke-main-purple transition-all">
+                                                <title>External Link</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                </path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="project-image"
+                                class="realtive md:py-3 col-span-full row-span-full group-odd/project-li:md:col-[1/8] group-even/project-li:md:col-[6/-1] opacity-10 h-full md:opacity-100">
+                                <a href=""
+                                    class="rounded block size-full bg-[#bdc7f4] align-middle shadow-md hover:shadow-[0_20px_30px_-15px_rgba(2,12,27,0.7)] duration-300 transition-all  before:transition-custom group/image-container hover:before:bg-transparent before:inset-0 before:absolute before:z-[3] relative before:mix-blend-screen before:rounded">
+                                    <div class="max-w-full size-full border border-slate-400/60 rounded">
+                                        <img src="images/to-do.png" alt=""
+                                            class="rounded size-full object-cover max-h-[520px] transition-custom">
+
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="other-projects"
+                class="snap-center py-20 md:py-24 w-full flex items-center overflow-auto relative">
+                <div
+                    class="mx-auto my-auto container flex flex-col justify-center items-center lg:max-w-[1000px] gap-20 p-4 sm:p-12">
+                    <div id="section-heading">
+                        <h1 class="text-[clamp(24px,5vw,32px)] font-semibold">Other Noteworthy Projects</h1>
+                    </div>
+                    <ul id="other-projects-grid"
+                        class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] w-full lg:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
+                        <li id="project">
+                            <div
+                                class="text-white flex flex-col py-8 px-7 relative size-full *:w-full items-start justify-between rounded bg-main-black transition-all overflow-auto hover:-translate-y-2 duration-300">
+                                <header>
+                                    <div id="project-top" class="flex justify-between mb-9">
+                                        <div id="folder" class="text-secondary-purple">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="1"
+                                                stroke-linecap="round" stroke-linejoin="round" class="size-10">
+                                                <title>Folder</title>
+                                                <path
+                                                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div id="project-links" class="flex items-center gap-2">
+                                            <a href="https://github.com/osama784/Kasper" aria-label="External Link"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="flex items-center justify-center py-2 px-1 relative z-[1]">
+                                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                    fill="none" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="size-5 stroke-light-gray hover:stroke-secondary-purple">
+                                                    <title>GitHub</title>
+                                                    <path
+                                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                            <a href="https://osama784.github.io/Kasper/" aria-label="External Link"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="flex items-center justify-center py-2 px-1 relative z-[1]">
+                                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                    fill="none" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                    class="size-5 stroke-light-gray hover:stroke-secondary-purple">
+                                                    <title>External Link</title>
+                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                    </path>
+                                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="project-title">
+                                        <a href="https://osama784.github.io/Kasper/"
+                                            class="font-semibold text-xl hover:text-secondary-purple transition-all before:block before:absolute before:inset-0 before:size-full before:top-0 before:left-0 before:z-0">Kasper
+                                        </a>
+                                    </div>
+                                    <div id="project-description" class="mt-3">
+                                        <p>Applying my Front-end skills on a template</p>
+                                    </div>
+                                </header>
+                                <footer>
+                                    <ul id="project-tech-list" class="flex gap-4 mt-7 text-light-gray">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                </footer>
+
+                            </div>
+                        </li>
+                        <li id="project">
+                            <div
+                                class="text-white flex flex-col py-8 px-7 relative size-full *:w-full items-start justify-between rounded bg-main-black transition-all overflow-auto hover:-translate-y-2 duration-300">
+                                <header>
+                                    <div id="project-top" class="flex justify-between mb-9">
+                                        <div id="folder" class="text-secondary-purple">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="1"
+                                                stroke-linecap="round" stroke-linejoin="round" class="size-10">
+                                                <title>Folder</title>
+                                                <path
+                                                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div id="project-links" class="flex items-center">
+                                            <a href="https://github.com/osama784/Kasper" aria-label="External Link"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="flex items-center justify-center py-2 px-1 relative z-[1]">
+                                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                    fill="none" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="size-5 stroke-light-gray hover:stroke-secondary-purple">
+                                                    <title>GitHub</title>
+                                                    <path
+                                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="project-title">
+                                        <a href=""
+                                            class="font-semibold text-xl hover:text-secondary-purple transition-all before:block before:absolute before:inset-0 before:size-full before:top-0 before:left-0 before:z-0">Portfolio</a>
+                                    </div>
+                                    <div id="project-description" class="mt-3">
+                                        <p>This portfolio you see :)</p>
+                                    </div>
+                                </header>
+                                <footer>
+                                    <ul id="project-tech-list" class="flex gap-4 mt-7 text-light-gray">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>Animations</li>
+                                    </ul>
+                                </footer>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="contact" class="snap-center w-full mt-40 mb-28 md:my-40 pb-10 overflow-auto relative">
+                <div class="mx-auto my-auto flex flex-col justify-center items-center p-4">
+                    <div class="flex flex-col gap-4 items-center justify-center">
+                        <h5 class="bg-main-purple text-white px-3 py-1 text-sm">What's Next?</h5>
+                        <h1 class="text-[clamp(40px,5vw,60px)] font-semibold">Get In Touch</h1>
+                        <p class="text-center max-w-[600px] text-base">I’m currently looking for new
+                            opportunities, my
+                            inbox is
+                            always
+                            open.
+                            Whether you have an
+                            offer or
+                            question, I’ll try my best to answer you!</p>
+                        <a href="mailto:osamadoage0@gmail.com"
+                            class="mt-2 p-4 text-main-purple border border-main-purple rounded transition-all hover:shadow-[4px_4px_0_0_#5271ff] hover:-translate-x-1 hover:-translate-y-1">
+                            Say Hello
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer
+            class="flex flex-col gap-y-2 my-10 select-none items-center justify-center hover:text-main-purple transition-all w-fit mx-auto">
+            <p>Built by Osama Doage</p>
+            <p>© 2023. Full-Stack Developer</p>
+        </footer>
+
+        <div orientation="right" class="left-auto right-2 bottom-0 z-10 w-10 lg:right-5 fixed hidden md:block">
+            <div
+                class="flex flex-col gap-8 items-center relative after:w-px after:h-24 after:mx-auto after:block after:text-black after:bg-black">
+                <a href="mailto:osamadoage0@gmail.com"
+                    class="relative mt-5 p-2 hover:text-main-purple hover:-translate-y-2  transition-all font-mono text-sm tracking-widest [writing-mode:vertical-rl]">
+                    osamadoage0@gmail.com
+                </a>
+            </div>
+        </div>
+        <div orientation="left" class="right-auto left-2 bottom-0 z-10 w-10 lg:left-5 fixed hidden md:block">
+            <div
+                class="flex flex-col gap-8 items-center relative after:w-px after:h-24 after:mx-auto after:block after:text-black after:bg-black">
+                <p
+                    class="relative select-none mt-5 p-2 hover:text-main-purple hover:-translate-y-2  transition-all font-mono text-sm tracking-widest [writing-mode:vertical-rl]">
+                    Full-Stack Developer
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>

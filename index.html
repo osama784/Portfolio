@@ -12,6 +12,11 @@
             scroll-behavior: smooth;
             scrollbar-width: thin;
             scrollbar-color: #eeeeee;
+
+        }
+
+        ::selection {
+            background-color: #748bff8d;
         }
     </style>
 </head>
@@ -39,7 +44,7 @@
                 </button>
                 <div id="navbar-items-wrapper" class="hidden w-full md:block md:w-auto">
                     <ul id="navbar-items-list"
-                        class="font-medium flex flex-col p-4 md:p-0 mt-6 md:mt-0 border bg-white border-gray-200 shadow-md rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0 ">
+                        class="font-medium flex flex-col p-4 md:p-0 mt-6 md:mt-0 border bg-white md:bg-inherit gap-y-6 border-gray-200 shadow-md rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0 ">
                         <li class="">
                             <a href="#home"
                                 class="flex gap-3 py-2 px-3 text-gray-900 rounded hover:text-main-purple transition-colors text-sm">
@@ -323,12 +328,12 @@
                             </div>
                             <div id="project-image"
                                 class="realtive md:py-3 col-span-full row-span-full group-odd/project-li:md:col-[1/8] group-even/project-li:md:col-[6/-1] opacity-10 h-full md:opacity-100">
-                                <a href=""
-                                    class="rounded block size-full bg-[#bdc7f4] align-middle shadow-md hover:shadow-[0_20px_30px_-15px_rgba(2,12,27,0.7)] duration-300 transition-all  before:transition-custom group/image-container hover:before:bg-transparent before:inset-0 before:absolute before:z-[3] relative before:mix-blend-screen before:rounded">
+                                <a href="https://osamadoage2.pythonanywhere.com"
+                                    class="rounded block size-full bg-[#bdc7f4] align-middle shadow-md hover:shadow-2xl duration-300 transition-all  before:transition-all group/image-container hover:before:bg-transparent before:inset-0 before:absolute before:z-[3] relative before:mix-blend-screen before:rounded">
 
                                     <div class="max-w-full size-full border border-slate-400/60 rounded">
                                         <img src="assets/images/nest.png" alt=""
-                                            class="rounded size-full object-cover max-h-[520px] transition-custom">
+                                            class="rounded size-full object-cover max-h-[520px] transition-all">
 
                                     </div>
                                 </a>
@@ -392,11 +397,11 @@
                             </div>
                             <div id="project-image"
                                 class="realtive md:py-3 col-span-full row-span-full group-odd/project-li:md:col-[1/8] group-even/project-li:md:col-[6/-1] opacity-10 h-full md:opacity-100">
-                                <a href=""
-                                    class="rounded block size-full bg-[#bdc7f4] align-middle shadow-md hover:shadow-[0_20px_30px_-15px_rgba(2,12,27,0.7)] duration-300 transition-all  before:transition-custom group/image-container hover:before:bg-transparent before:inset-0 before:absolute before:z-[3] relative before:mix-blend-screen before:rounded">
+                                <a href="https://prompt-sphere-tawny.vercel.app"
+                                    class="rounded block size-full bg-[#bdc7f4] align-middle shadow-md hover:shadow-2xl duration-300 transition-all  before:transition-all group/image-container hover:before:bg-transparent before:inset-0 before:absolute before:z-[3] relative before:mix-blend-screen before:rounded">
                                     <div class="max-w-full size-full border border-slate-400/60 rounded">
                                         <img src="assets/images/prompts.png" alt=""
-                                            class="rounded size-full object-cover max-h-[520px] transition-custom">
+                                            class="rounded size-full object-cover max-h-[520px] transition-all">
                                     </div>
                                 </a>
                             </div>
@@ -458,11 +463,11 @@
                             </div>
                             <div id="project-image"
                                 class="realtive md:py-3 col-span-full row-span-full group-odd/project-li:md:col-[1/8] group-even/project-li:md:col-[6/-1] opacity-10 h-full md:opacity-100">
-                                <a href=""
-                                    class="rounded block size-full bg-[#bdc7f4] align-middle shadow-md hover:shadow-[0_20px_30px_-15px_rgba(2,12,27,0.7)] duration-300 transition-all  before:transition-custom group/image-container hover:before:bg-transparent before:inset-0 before:absolute before:z-[3] relative before:mix-blend-screen before:rounded">
+                                <a href="https://to-do-six-coral.vercel.app"
+                                    class="rounded block size-full bg-[#bdc7f4] align-middle shadow-md hover:shadow-2xl duration-300 transition-all  before:transition-all group/image-container hover:before:bg-transparent before:inset-0 before:absolute before:z-[3] relative before:mix-blend-screen before:rounded">
                                     <div class="max-w-full size-full border border-slate-400/60 rounded">
                                         <img src="assets/images/to-do.png" alt=""
-                                            class="rounded size-full object-cover max-h-[520px] transition-custom">
+                                            class="rounded size-full object-cover max-h-[520px] transition-all">
 
                                     </div>
                                 </a>
@@ -560,7 +565,7 @@
                                             </svg>
                                         </div>
                                         <div id="project-links" class="flex items-center">
-                                            <a href="https://github.com/osama784/Kasper" aria-label="External Link"
+                                            <a href="https://github.com/osama784/Portfolio" aria-label="GitHub Link"
                                                 target="_blank" rel="noopener noreferrer"
                                                 class="flex items-center justify-center py-2 px-1 relative z-[1]">
                                                 <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"

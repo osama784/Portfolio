@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./assets/styles/input.css -o ./assets/styles/output.css --watch"
+    "build-tailwind": "npx tailwindcss -i ./assets/styles/input.css -o ./assets/styles/output.css --watch"
   },
   "keywords": [],
   "author": "",

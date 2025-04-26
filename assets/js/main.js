@@ -7,6 +7,7 @@ const stdTransition = "all, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1), t
 const initialOpacity = "0";
 const finalOpacity = "1";
 const aboutSectionInner = document.querySelector("#about #about-inner");
+const eventsSectionInner = document.querySelector("#events #events-inner");
 const projectsSection = document.getElementById("projects");
 const otherProjectsSection = document.getElementById("other-projects");
 const projectsSectionHeading = projectsSection.querySelector("#section-heading");
@@ -22,12 +23,7 @@ const homeSectionHeadingDescription = homeSectionHeading.querySelector("#descrip
 const homeSectionContact = homeSection.querySelector("#section-contact");
 const homeSectionContent = homeSection.querySelector("#section-content");
 const homeSectionFooter = homeSection.querySelector("#section-footer");
-const animatedElements = [
-    aboutSectionInner,
-    projectsSectionHeading,
-    otherProjectsSectionHeading,
-    contactSection,
-];
+const animatedElements = [aboutSectionInner, eventsSectionInner, projectsSectionHeading, otherProjectsSectionHeading, contactSection];
 const animatedHomeElements = [
     homeSectionIntro,
     homeSectionHeadingName,
@@ -71,8 +67,7 @@ const fadeUpElement = (element, delay) => {
     element.classList.add(animtaionFadeUpClass);
 };
 const reached = (element) => {
-    return (element.getBoundingClientRect().top + 50 <= window.innerHeight &&
-        !element.classList.contains(animtaionFadeUpClass));
+    return element.getBoundingClientRect().top + 50 <= window.innerHeight && !element.classList.contains(animtaionFadeUpClass);
 };
 const settingInitialState = () => {
     animatedElements.forEach((element) => {
@@ -137,8 +132,8 @@ const showSidebar = () => {
 const hideSidebar = () => {
     blurEffect.style.zIndex = "-10";
     blurEffect.style.opacity = "0";
-    navbar.style.removeProperty('background-color');
-    navbarListWrapper.style.removeProperty('display');
+    navbar.style.removeProperty("background-color");
+    navbarListWrapper.style.removeProperty("display");
     navbarMenu.classList.remove("clicked");
 };
 navbarMenu.onclick = () => {
@@ -164,3 +159,23 @@ window.onresize = () => {
         hideSidebar();
     }
 };
+const events = document.querySelectorAll("#events-list > li");
+const eventsDescriptions = document.querySelectorAll("#event-description > div");
+events.forEach((element) => {
+    element.addEventListener("click", () => {
+        events.forEach((e) => {
+            e.classList.add("before:bg-slate-300");
+            e.classList.remove("before:bg-main-purple");
+        });
+        element.classList.add("before:bg-main-purple");
+        element.classList.remove("before:bg-slate-300");
+        eventsDescriptions.forEach((descriptionDiv) => {
+            descriptionDiv.classList.remove("flex");
+            descriptionDiv.classList.add("hidden");
+            if (descriptionDiv.dataset.order == element.dataset.order) {
+                descriptionDiv.classList.add("flex");
+                descriptionDiv.classList.remove("hidden");
+            }
+        });
+    });
+});

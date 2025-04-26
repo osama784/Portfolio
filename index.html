@@ -47,29 +47,36 @@
                         class="font-medium flex flex-col p-4 md:p-0 mt-6 md:mt-0 border bg-white md:bg-inherit gap-y-6 border-gray-200 shadow-md rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0 ">
                         <li class="">
                             <a href="#home"
-                                class="flex gap-3 py-2 px-3 text-gray-900 rounded hover:text-main-purple transition-colors text-sm">
+                                class="flex gap-3 py-2 md:pl-3 text-gray-900 rounded hover:text-main-purple transition-colors text-sm">
                                 <span class="text-main-purple">01.</span>
                                 <span>Home</span>
                             </a>
                         </li>
                         <li class=" ">
                             <a href="#about"
-                                class="flex gap-3 py-2 px-3 text-gray-900 rounded hover:text-main-purple transition-colors text-sm">
+                                class="flex gap-3 py-2 text-gray-900 rounded hover:text-main-purple transition-colors text-sm">
                                 <span class="text-main-purple">02.</span>
                                 <span>About</span>
                             </a>
                         </li>
                         <li class=" ">
-                            <a href="#projects"
-                                class="flex gap-3 py-2 px-3 text-gray-900 rounded hover:text-main-purple transition-colors text-sm">
+                            <a href="#events"
+                                class="flex gap-3 py-2 text-gray-900 rounded hover:text-main-purple transition-colors text-sm">
                                 <span class="text-main-purple">03.</span>
+                                <span>Events</span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="#projects"
+                                class="flex gap-3 py-2 text-gray-900 rounded hover:text-main-purple transition-colors text-sm">
+                                <span class="text-main-purple">04.</span>
                                 <span>Projects</span>
                             </a>
                         </li>
                         <li class=" ">
                             <a href="#contact"
-                                class="flex gap-3 py-2 px-3 text-gray-900 rounded hover:text-main-purple transition-colors text-sm">
-                                <span class="text-main-purple">04.</span>
+                                class="flex gap-3 py-2 md:pr-3 text-gray-900 rounded hover:text-main-purple transition-colors text-sm">
+                                <span class="text-main-purple">05.</span>
                                 <span>Contact</span>
                             </a>
                         </li>
@@ -79,7 +86,7 @@
         </nav>
 
         <main>
-            <section id="home" class="relative flex justify-center items-center w-full py-28 sm:py-48">
+            <section id="home" class="relative flex justify-center items-center w-full pt-28 sm:pt-48">
                 <div class="text-center px-[2.5%] py-[5%] flex justify-center">
                     <div class="mt-auto mb-auto flex flex-col justify-center items-center">
                         <div id="section-intro" class="flex items-center gap-3 mb-3 ">
@@ -188,9 +195,9 @@
                     </div>
                 </div>
             </section>
-            <section id="about" class="relative flex justify-center items-center w-full">
+            <section id="about" class="relative flex justify-center items-center w-full pt-28 sm:pt-48">
                 <div id="about-inner"
-                    class="flex flex-col gap-5 my-auto mx-auto sm:text-lg px-12 md:px-0 md:max-w-[50vw] transition-all">
+                    class="flex flex-col gap-5 my-auto mx-auto sm:text-lg px-12 lg:px-0 lg:max-w-[64vw] transition-all">
                     <div id="section-heading" class="flex gap-3 items-center font-semibold">
                         <h1 class="text-[clamp(24px,5vw,32px)]"><span class="text-main-purple text-lg">02.</span> About
                             Me</h1>
@@ -212,8 +219,8 @@
 
                     </div>
                     <div id="skills" class="flex flex-col gap-4">
-                        <p class="text-black/60">Here are a few technologies I'v been working with recently:</p>
-                        <div class="">
+                        <p class="text-black/60">Here are a few technologies I'v been working with:</p>
+                        <div>
                             <ul
                                 class="grid sm:grid-cols-[repeat(2,minmax(140px,220px))] gap-2 overflow-hidden text-base">
                                 <li
@@ -248,58 +255,115 @@
                                     JAVA (Advanced)</li>
                             </ul>
                         </div>
+                        <p class="text-black/60">Some other ones I'm training on recently:</p>
+                        <div>
+                            <ul
+                                class="grid sm:grid-cols-[repeat(2,minmax(140px,220px))] gap-2 overflow-hidden text-base">
+                                <li
+                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                    Nodejs</li>
+                                <li
+                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                    Express</li>
+                                <li
+                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                    MongoDB (Mongoose)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
             <section id="events" class="relative flex justify-center items-center w-full py-28 sm:py-48">
                 <div id="events-inner"
-                    class="flex flex-col gap-8 my-auto mx-auto sm:text-lg px-12 md:px-10 lg:max-w-[50vw] transition-all">
+                    class="flex flex-col gap-8 my-auto mx-auto sm:text-lg px-12 lg:px-0 lg:max-w-[64vw] transition-all">
                     <div id="section-heading" class="flex gap-3 items-center font-semibold">
                         <h1 class="text-[clamp(24px,5vw,32px)]"><span class="text-main-purple text-lg">03.</span> Events
+                            & Experience
                         </h1>
                         <hr class="border hidden sm:block border-main-purple flex-1 max-w-36 mt-1">
                     </div>
                     <div id="main-content" class="flex flex-col sm:flex-row gap-14">
-                        <ul
-                            class="flex sm:flex-col text-[16px] *:content-center text-center *:h-12 *:w-28 relative before:h-1 before:w-28 sm:before:h-12 sm:before:w-1 before:bg-main-purple before:absolute before:left-0 before:bottom-0 sm:before:top-0 ">
-                            <li class="hover:text-main-purple text-main-purple bg-gray-200"><button>Hackathon</button>
+                        <ul id="events-list"
+                            class="w-fit h-fit flex sm:flex-col text-[16px] *:content-center text-center *:h-12 *:w-28 relative ">
+                            <li data-order="1"
+                                class="cursor-pointer relative before:transition-all before:absolute before:bg-main-purple before:left-0 before:top-0 before:h-12 before:w-1 hover:text-main-purple text-main-purple bg-gray-200 transition-all">
+                                Hackathon
+                            </li>
+                            <li data-order="2"
+                                class="cursor-pointer relative before:transition-all before:absolute before:bg-slate-300 before:left-0 before:top-0 before:h-12 before:w-1 hover:text-main-purple text-main-purple bg-gray-200 transition-all">
+                                AL Mithaly
                             </li>
                         </ul>
-                        <div id="event-description" class="flex flex-col gap-7">
-                            <div id="heading">
-                                <div class="flex gap-3 items-center">
-                                    <h3 id="title" class="font-semibold">Startup Syria Hackathon</h3>
-                                    <a href="https://www.facebook.com/StartupSyria/" target="_blank"
-                                        rel="noreferrer noopener" class="w-5">
-                                        <div class="">
-                                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                                width="20px" fill="#000000D9" color="#000000D9"
+                        <div id="event-description">
+                            <div id="Hackathon-description" data-order="1" class="flex flex-col gap-7">
+                                <div id="heading">
+                                    <div class="flex gap-3 items-center flex-wrap sm:flex-nowrap">
+                                        <h3 id="title" class="font-semibold">Startup Syria Hackathon</h3>
+                                        <a href="https://www.facebook.com/StartupSyria/" target="_blank"
+                                            rel="noreferrer noopener" class="w-5">
+                                            <div class="">
+                                                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                                    width="20px" fill="#000000D9" color="#000000D9"
+                                                    class="fill-main-purple">
+                                                    <title>Facebook</title>
+                                                    <path
+                                                        d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <small id="date" class="text-sm text-gray-500">Febraury 21, 28 - 2025</small>
+                                </div>
+                                <ul id="skills" class="text-[16px] space-y-2">
+                                    <li
+                                        class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                        Collaborated with a team of 8 people with high expreince in diffenent fields to
+                                        deliver the best result</li>
+                                    <li
+                                        class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                        Built and delivered technical solutions according to the need of the team by
+                                        Developing an interactive front-end app <a
+                                            href="https://green-syria.vercel.app/"
+                                            class="text-main-purple hover:underline">Green Syria</a></li>
+                                    <li
+                                        class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                        Attending meeting was the most required thing to stay in-touch and keep up with
+                                        the
+                                        last amendments and modefications</li>
+                                </ul>
+                            </div>
+                            <div id="almithaly-description" data-order="2" class="flex-col gap-7 hidden">
+                                <div id="heading">
+                                    <div class="flex gap-3 items-center flex-wrap sm:flex-nowrap">
+                                        <h3 id="title" class="font-semibold">Al Mithaly Freelance project (Mobile app)
+                                        </h3>
+                                        <div class="w-5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="20px"
                                                 class="fill-main-purple">
-                                                <title>Facebook</title>
                                                 <path
-                                                    d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z">
-                                                </path>
+                                                    d="M16 64C16 28.7 44.7 0 80 0L304 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L80 512c-35.3 0-64-28.7-64-64L16 64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64L80 64l0 320 224 0 0-320z" />
                                             </svg>
                                         </div>
-                                    </a>
+                                    </div>
+
+                                    <small id="date" class="text-sm text-gray-500">Octobor, December - 2024</small>
                                 </div>
-                                <small id="date" class="text-sm text-gray-500">Febraury 21, 28 - 2025</small>
+                                <ul id="skills" class="text-[16px] space-y-2">
+                                    <li
+                                        class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                        Real World project for a small company that sells and refactors regulators</li>
+                                    <li
+                                        class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                        Developed a sufficent Back-end for the app to store regulators in the database
+                                        and managing them</li>
+                                    <li
+                                        class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
+                                        Secured the system with authentication and authorization for employees and
+                                        admins
+                                    </li>
+                                </ul>
                             </div>
-                            <ul id="skills" class="text-[16px] space-y-2">
-                                <li
-                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
-                                    Collaborated with a team of 8 people with high expreince in diffenent fields to
-                                    deliver the best result</li>
-                                <li
-                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
-                                    Built and delivered technical solutions according to the need of the team by
-                                    Developing an interactive front-end app <a href="https://green-syria.vercel.app/"
-                                        class="text-main-purple hover:underline">Green Syria</a></li>
-                                <li
-                                    class="relative font-mono pl-5 before:content-['▹'] before:absolute before:left-0 before:text-main-purple before:text-lg">
-                                    Attending meeting was the most required thing to stay in-touch and keep up with the
-                                    last amendments and modefications</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -309,7 +373,7 @@
                     class="mx-auto my-auto container flex flex-col justify-center items-center lg:max-w-[1000px] gap-10 p-4 sm:p-12">
                     <div id="section-heading"
                         class="flex gap-3 items-center self-center justify-start w-full font-semibold">
-                        <h1 class="text-[clamp(24px,5vw,32px)]"><span class="text-main-purple text-xl">03.</span> Some
+                        <h1 class="text-[clamp(24px,5vw,32px)]"><span class="text-main-purple text-xl">04.</span> Some
                             Things
                             I'v Built</h1>
                         <hr class="border hidden sm:block border-main-purple flex-1 max-w-36 mt-1">
@@ -535,7 +599,111 @@
                         <h1 class="text-[clamp(24px,5vw,32px)] font-semibold">Other Noteworthy Projects</h1>
                     </div>
                     <ul id="other-projects-grid"
-                        class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] w-full lg:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
+                        class="grid w-full sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
+                        <li id="project">
+                            <div
+                                class="text-white flex flex-col py-8 px-7 relative size-full *:w-full items-start justify-between rounded bg-main-black transition-all hover:-translate-y-2 duration-300">
+                                <header>
+                                    <div id="project-top" class="flex justify-between mb-9">
+                                        <div id="folder" class="text-secondary-purple">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="1"
+                                                stroke-linecap="round" stroke-linejoin="round" class="size-10">
+                                                <title>Folder</title>
+                                                <path
+                                                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div id="project-links" class="flex items-center">
+                                            <a href="https://github.com/osama784/Blog" aria-label="GitHub Link"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="flex items-center justify-center py-2 px-1 relative z-[1]">
+                                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                    fill="none" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="size-5 stroke-light-gray hover:stroke-secondary-purple">
+                                                    <title>GitHub</title>
+                                                    <path
+                                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="project-title">
+                                        <a href=""
+                                            class="font-semibold text-xl hover:text-secondary-purple transition-all before:block before:absolute before:inset-0 before:size-full before:top-0 before:left-0 before:z-0">Blog
+                                            app</a>
+                                    </div>
+                                    <div id="project-description" class="mt-3">
+                                        <p>Nodejs app that handles Blogs CRUD operations with authentication and
+                                            permissions for users</p>
+                                    </div>
+                                </header>
+                                <footer>
+                                    <ul id="project-tech-list" class="flex flex-wrap gap-4 mt-7 text-light-gray">
+                                        <li>Expressjs</li>
+                                        <li>MongoDB</li>
+                                        <li>Mongoose</li>
+                                        <li>TypeScript</li>
+                                        <li>passport</li>
+                                        <li>zod</li>
+                                    </ul>
+                                </footer>
+
+                            </div>
+                        </li>
+
+                        <li id="project">
+                            <div
+                                class="text-white flex flex-col py-8 px-7 relative size-full *:w-full items-start justify-between rounded bg-main-black transition-all hover:-translate-y-2 duration-300">
+                                <header>
+                                    <div id="project-top" class="flex justify-between mb-9">
+                                        <div id="folder" class="text-secondary-purple">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="1"
+                                                stroke-linecap="round" stroke-linejoin="round" class="size-10">
+                                                <title>Folder</title>
+                                                <path
+                                                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div id="project-links" class="flex items-center">
+                                            <a href="https://github.com/osama784/Portfolio" aria-label="GitHub Link"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="flex items-center justify-center py-2 px-1 relative z-[1]">
+                                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                    fill="none" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="size-5 stroke-light-gray hover:stroke-secondary-purple">
+                                                    <title>GitHub</title>
+                                                    <path
+                                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="project-title">
+                                        <a href=""
+                                            class="font-semibold text-xl hover:text-secondary-purple transition-all before:block before:absolute before:inset-0 before:size-full before:top-0 before:left-0 before:z-0">Portfolio</a>
+                                    </div>
+                                    <div id="project-description" class="mt-3">
+                                        <p>This portfolio you see :)</p>
+                                    </div>
+                                </header>
+                                <footer>
+                                    <ul id="project-tech-list" class="flex flex-wrap gap-4 mt-7 text-light-gray">
+                                        <li>TailwindCSS</li>
+                                        <li>TypeScript</li>
+                                        <li>Animations</li>
+                                    </ul>
+                                </footer>
+
+                            </div>
+                        </li>
                         <li id="project">
                             <div
                                 class="text-white flex flex-col py-8 px-7 relative size-full *:w-full items-start justify-between rounded bg-main-black transition-all hover:-translate-y-2 duration-300">
@@ -595,55 +763,6 @@
                                         <li>HTML</li>
                                         <li>CSS</li>
                                         <li>JavaScript</li>
-                                    </ul>
-                                </footer>
-
-                            </div>
-                        </li>
-                        <li id="project">
-                            <div
-                                class="text-white flex flex-col py-8 px-7 relative size-full *:w-full items-start justify-between rounded bg-main-black transition-all hover:-translate-y-2 duration-300">
-                                <header>
-                                    <div id="project-top" class="flex justify-between mb-9">
-                                        <div id="folder" class="text-secondary-purple">
-                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
-                                                fill="none" stroke="currentColor" stroke-width="1"
-                                                stroke-linecap="round" stroke-linejoin="round" class="size-10">
-                                                <title>Folder</title>
-                                                <path
-                                                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                        <div id="project-links" class="flex items-center">
-                                            <a href="https://github.com/osama784/Portfolio" aria-label="GitHub Link"
-                                                target="_blank" rel="noopener noreferrer"
-                                                class="flex items-center justify-center py-2 px-1 relative z-[1]">
-                                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
-                                                    fill="none" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    class="size-5 stroke-light-gray hover:stroke-secondary-purple">
-                                                    <title>GitHub</title>
-                                                    <path
-                                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                    </path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div id="project-title">
-                                        <a href=""
-                                            class="font-semibold text-xl hover:text-secondary-purple transition-all before:block before:absolute before:inset-0 before:size-full before:top-0 before:left-0 before:z-0">Portfolio</a>
-                                    </div>
-                                    <div id="project-description" class="mt-3">
-                                        <p>This portfolio you see :)</p>
-                                    </div>
-                                </header>
-                                <footer>
-                                    <ul id="project-tech-list" class="flex flex-wrap gap-4 mt-7 text-light-gray">
-                                        <li>TailwindCSS</li>
-                                        <li>TypeScript</li>
-                                        <li>Animations</li>
                                     </ul>
                                 </footer>
 
